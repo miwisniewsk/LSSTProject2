@@ -1,9 +1,21 @@
 # LSSTproject
 This is a repository, where I upload my progress with LSST project.
 
-From JBST catalog I chose points where chi2>20, 0.01>z>0.3. I added new columns representing LSST filters and their uncertainties so that CIGALE could 
-predict values.
+WORK before: 
+
+Reading papers on dust attenuation
+Downloading and learning basics of Topcat
+Downloading anaconda and CIGALE
+Data preparation (python) using astropy and uncertainties library
+Reading Małek 2024
+Test runs of CIGALE (Małek 2024 parameters)
 
 25.02.2026r.
 
 Making this repository.
+
+26.02.2026r.
+
+From JBST catalog I chose points where chi2>20, 0.01>z>0.3. I added new columns representing LSST filters and their uncertainties so that CIGALE could predict those values (6282 rows).
+
+Using topcat I made an intersection of selected sources from JWST and ECDFS - radius 20 arsec saved as Intersection20 (974 rows) file. But we are interested in JWST\ECDFS (we want to substract AGNs) so I made that with topcat as well - selected_cleaned (5387 rows, 6282 - 974 = 5308) file (I picked radius 20).

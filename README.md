@@ -19,3 +19,7 @@ Making this repository.
 From JBST catalog I chose points where chi2>20, 0.01>z>0.3. I added new columns representing LSST filters and their uncertainties so that CIGALE could predict those values (6282 rows).
 
 Using topcat I made an intersection of selected sources from JWST and ECDFS - radius 20 arsec saved as Intersection20 (974 rows) file. But we are interested in JWST\ECDFS (we want to substract AGNs) so I made that with topcat as well - selected_cleaned (5387 rows, 6282 - 974 = 5308) file (I picked radius 20).
+
+03.03.2026, 05.03.2026
+
+Preparing cigale file and running cigale.

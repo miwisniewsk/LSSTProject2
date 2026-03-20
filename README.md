@@ -23,3 +23,9 @@ Using topcat I made an intersection of selected sources from JWST and ECDFS - ra
 03.03.2026, 05.03.2026
 
 Preparing cigale file and running cigale.
+
+20.03.2026
+
+Previous work: learning more about cigale, making different intersections in top cat
+
+Today: running Cigale with changed parameters and corrected input file; the cleaning of AGNs for radius of 2 arcsec (output folder too big for github)

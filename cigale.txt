@@ -1,0 +1,17 @@
+Tutaj sobie zapiuję jak robić podstawowe rzeczy w cigalu :)
+
+Włączenie cigala:
+conda activate cigale
+
+Sprawdzenie parametrów:
+pcigale check
+
+Puszczenie cigala:
+pcigale run
+
+Zrobienie wykresów itd:
+pcigale-plots sed --format png
+pcigale-plots mock --format png
+
+Przydatne, wyłaczenie samego ekranu:
+loginctl lock-session

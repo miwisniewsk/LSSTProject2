@@ -29,3 +29,7 @@ Preparing cigale file and running cigale.
 Previous work: learning more about cigale, making different intersections in top cat
 
 Today: running Cigale with changed parameters and corrected input file; the cleaning of AGNs for radius of 2 arcsec (output folder too big for github)
+
+27.03.2026
+
+Making log-log mass to SFR plot with colored attenuation based on cigale results.

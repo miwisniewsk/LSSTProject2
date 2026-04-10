@@ -33,3 +33,11 @@ Today: running Cigale with changed parameters and corrected input file; the clea
 27.03.2026
 
 Making log-log mass to SFR plot with colored attenuation based on cigale results.
+
+29.03, 01.04
+
+Trying linear fit with cosmological time from Speagle
+
+10.04
+
+Adding attenuation bins, trying linear fit for bins, adding code for calculating number of points at a distance d from the line.

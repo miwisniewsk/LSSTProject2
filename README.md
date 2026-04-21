@@ -41,3 +41,9 @@ Trying linear fit with cosmological time from Speagle
 10.04
 
 Adding attenuation bins, trying linear fit for bins, adding code for calculating number of points at a distance d from the line.
+
+21.04
+Previous work: adding Krzysiek code for calculating SFR from different models, learing how to use LSST data, creating ORCID account
+and registering on Rubin Science Platorm, attending Observational techniques in astronomy class and intalling required packets.
+
+Today's: ploting SFR difference between cigale calculated and modeled SFR. 

@@ -15,3 +15,6 @@ pcigale-plots mock --format png
 
 Przydatne, wyłaczenie samego ekranu:
 loginctl lock-session
+
+Instalacje:
+python -m pip install (nazwa)

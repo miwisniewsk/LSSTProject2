@@ -20,6 +20,8 @@ From JBST catalog I chose points where chi2>20, 0.01>z>0.3. I added new columns 
 
 Using topcat I made an intersection of selected sources from JWST and ECDFS - radius 20 arsec saved as Intersection20 (974 rows) file. But we are interested in JWST\ECDFS (we want to substract AGNs) so I made that with topcat as well - selected_cleaned (5387 rows, 6282 - 974 = 5308) file (I picked radius 20).
 
+Update: I changed radius to 2 arcsec and ended up removing only 6 objects
+
 03.03.2026, 05.03.2026
 
 Preparing cigale file and running cigale.
@@ -44,6 +46,15 @@ Adding attenuation bins, trying linear fit for bins, adding code for calculating
 
 21.04
 Previous work: adding Krzysiek code for calculating SFR from different models, learing how to use LSST data, creating ORCID account
-and registering on Rubin Science Platorm, attending Observational techniques in astronomy class and intalling required packets.
+and registering on Rubin Science Platorm, attending Observational techniques in astronomy class and installing required packets.
 
 Today's: ploting SFR difference between cigale calculated and modeled SFR. 
+
+11.05
+
+Previous and current: Learning about RSP and using it to extract LSST images, using SEP for backgroung substracttion and photometry.
+
+15.05
+
+Calculating circular photometry for different radiuses, picking the radius that have 80% of the flux and changing this flux into mag.
+File galaxy_photometry2.ipynb has shortened version of the analysis (no images etc) for different filters.

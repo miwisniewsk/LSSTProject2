@@ -58,3 +58,19 @@ Previous and current: Learning about RSP and using it to extract LSST images, us
 
 Calculating circular photometry for different radiuses, picking the radius that have 80% of the flux and changing this flux into mag.
 File galaxy_photometry2.ipynb has shortened version of the analysis (no images etc) for different filters.
+
+29.05
+
+Previous and current work: In Lsst_img I changed catalog from selected_cleaned to a merge of selected_cleaned (contains RA, DEC)
+and results (contians mass according to CIGALE), so that I could sort this catalog on mass and search images of the most massive galaxies.
+I also debuged this code a little. In galaxy_photometry I changed ADU to mJy (Is it correct?)
+
+galaxy_photometry: In this file there is a sep tutorial for a single galaxy in ugrizy filters. There is background subtraction, object decetction, circular photometry (with images) plus flux to radius plot.
+
+galaxy_photometry2: Everything from first file (without images and object detection) plus flux to radius plots for all filters.
+
+galaxy_photometry3: There is a program for a number of galaxies where I subtract the background, find a relevant radius for a circular photometry
+and then I plot all images with this circle. I calculate the magnitudes in different filters, but without flux to radius plots.
+
+Next steps: check if ADU to mJy is correct (probably not), it is clear looking at the images that circular photometry is not good enough
+in some cases, because it is getting the light from other sources (eg. object 36), I am not sure about the CIGALE simualtion because some of these "most massive" galaxies look dim.

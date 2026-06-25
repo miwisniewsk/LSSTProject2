@@ -74,3 +74,13 @@ and then I plot all images with this circle. I calculate the magnitudes in diffe
 
 Next steps: check if ADU to mJy is correct (probably not), it is clear looking at the images that circular photometry is not good enough
 in some cases, because it is getting the light from other sources (eg. object 36), I am not sure about the CIGALE simualtion because some of these "most massive" galaxies look dim.
+
+25.06
+
+galaxy_images_probe.fits - File with 7 galaxies with different luminosities
+
+masking.py - Krzysiek's code for masking (with 2 edits)
+
+masking.ipynb - my usage of Krzysiek's code
+
+galaxy_photomery4.ipynb - Adding masking to my photometry pipeline

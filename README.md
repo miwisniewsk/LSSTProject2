@@ -84,3 +84,7 @@ masking.py - Krzysiek's code for masking (with 2 edits)
 masking.ipynb - my usage of Krzysiek's code
 
 galaxy_photomery4.ipynb - Adding masking to my photometry pipeline
+
+3.07
+
+Adding gri masking

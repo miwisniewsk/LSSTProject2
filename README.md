@@ -88,3 +88,7 @@ galaxy_photomery4.ipynb - Adding masking to my photometry pipeline
 3.07
 
 Adding gri masking
+
+9.07
+
+galaxy_photometry5.ipynb - masking in i band in every tenth massive galaxy

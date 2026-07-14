@@ -92,3 +92,7 @@ Adding gri masking
 9.07
 
 galaxy_photometry5.ipynb - masking in i band in every tenth massive galaxy
+
+i_band10.fits - file with every tenth most massive galaxy in i and u band (vmax 99)
+
+galaxies_images_ui.fits - file with every tenth most massive galaxy in i and u band (vmax 99)

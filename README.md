@@ -93,6 +93,16 @@ Adding gri masking
 
 galaxy_photometry5.ipynb - masking in i band in every tenth massive galaxy
 
-i_band10.fits - file with every tenth most massive galaxy in i and u band (vmax 99)
+i_band10.fits - file with every tenth most massive galaxy in i and u band (vmax 90)
 
 galaxies_images_ui.fits - file with every tenth most massive galaxy in i and u band (vmax 99)
+
+14.07
+
+Adding making a SFR plot in i band to galaxy_photometry4.ipynb
+Other mini tasks: making a cutout (file 5), checking mass and position of random galaxies
+
+17.07
+
+Generating a file with a larger numer of galaxies - galaxies_images245.fits
+Performing photometry and calculating SNR plot for these objects.

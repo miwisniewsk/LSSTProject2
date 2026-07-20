@@ -106,3 +106,8 @@ Other mini tasks: making a cutout (file 5), checking mass and position of random
 
 Generating a file with a larger numer of galaxies - galaxies_images245.fits
 Performing photometry and calculating SNR plot for these objects.
+
+20.07
+
+Making a mass histogram (in galaxy photometry 4), setting a red line around 180 galaxy, because after that a lot
+of galaxies have SNR above 3.

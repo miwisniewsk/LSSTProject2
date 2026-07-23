@@ -104,10 +104,23 @@ Other mini tasks: making a cutout (file 5), checking mass and position of random
 
 17.07
 
-Generating a file with a larger numer of galaxies - galaxies_images245.fits
+galaxies_images245.fits - generated file with a larger numer of galaxies 
 Performing photometry and calculating SNR plot for these objects.
 
 20.07
 
 Making a mass histogram (in galaxy photometry 4), setting a red line around 180 galaxy, because after that a lot
 of galaxies have SNR above 3.
+
+23.07
+
+lsst_lum_cat.ipynb - with methods used in galaxy_photometry files I extract lsst luminosities only for most massive galaxies that have calculated luminosity in all filters and add this to selected_cleaned.fits
+lsst_lum_cat.ipynb - resulting file
+
+*Documenting undocumented so far files*
+
+convert.py - file that creates catalog from james webb
+before_crossmatch.fits - file created by convert.py
+galaxies.images.fits - top 100 most massive galaxies
+Lsst_img.ipynb - pipeline for getting images from RSP
+main_seq.ipynb - file with mass to SFR plots etc

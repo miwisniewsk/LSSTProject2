@@ -124,3 +124,52 @@ before_crossmatch.fits - file created by convert.py
 galaxies.images.fits - top 100 most massive galaxies
 Lsst_img.ipynb - pipeline for getting images from RSP
 main_seq.ipynb - file with mass to SFR plots etc
+
+27.07
+
+I am changing input catalog (changes in convert.py) so that we have 80% flux not 100%
+before_crossmatch80.fits - new output catalog
+In lsst_lum_cat I have changed zero points - previous cigale run showed incorrections
+cigale80 - folder with cigale files where we have changed data
+lsst_match.fits - file with 80% flux in lsst and jwst with old zp
+lsst_lum_files - file with 80% flux in lsst and jwst with new zp
+
+29.07
+
+Changing methods (previously assuming wrong units ADU, it is nJy) and running cigale to check how consistnent it is now.
+
+TODO:
+* taking care of the repository
+* checking the percentage of maskings in images
+* checking in catalog documentation (JWST, Hubble) how 80% flux is defined
+* making one big pipeline - with all of the content from galaxy_photometry files, maybe removing some of them, making sure the method is corrected
+* removing objects with SNR < 3 
+* making sure the unit in LSST is actually nJy - printing header of an image
+* adding interpolation
+* flux to radius ratio but per pixel, and making sure it is done for masked images
+* comparing fluxes in LSST and JWST (SED)
+* comparing fluxes in LSST and JWST when photometry is performed on an image and not taken from the catalog
+* test with a constant aperture - to check where the inconsistencies come from 
+
+30.07
+
+photometry_flux_plots.ipynb - file with different ways of showing flux plots (made from galaxy_photometry2), writing code for a single galaxy
+photometry_pipeline.ipynb - fixed methods (masking percentage, correct units) from galaxy_photometry files + SNR in i band + mass histogram
+old_photometry - folder with galaxy_photometry files - contain mistakes, no need for fix, no longer in use
+
+Done:
+* checking the percentage of maskings in images
+* making one big pipeline - with all of the content from galaxy_photometry files, maybe removing some of them, making sure the method is corrected
+* flux to radius ratio but per pixel, and making sure it is done for masked images
+* removing objects with SNR < 3 (in i band)
+
+Left todo:
+* taking care of the repository
+* checking in catalog documentation (JWST, Hubble) how 80% flux is defined
+* making sure the unit in LSST is actually nJy - printing header of an image
+* adding interpolation
+* comparing fluxes in LSST and JWST (SED)
+* comparing fluxes in LSST and JWST when photometry is performed on an image and not taken from the catalog
+* test with a constant aperture - to check where the inconsistencies come from 
+
+

@@ -3,6 +3,10 @@ Tutaj sobie zapiuję jak robić podstawowe rzeczy w cigalu :)
 Włączenie cigala:
 conda activate cigale
 
+pcigale init
+
+pcigale genconf
+
 Sprawdzenie parametrów:
 pcigale check
 

@@ -9,7 +9,7 @@ from uncertainties import unumpy as unp
 hdul = fits.open('hlsp_jades_jwst_nircam_goods-s-deep_photometry_v2.0_catalog.fits')
 
 table3 = Table(hdul[3].data)
-table8 = Table(hdul[8].data)
+table8 = Table(hdul[4].data)
 table9 = Table(hdul[9].data)
 
 # I intialize the data structure with following data
@@ -28,13 +28,13 @@ fluxes = Table(table8[["ID"]])
 for i in range(3):
     filters = filter_types[i]
     for filter in filters.split():
-        flux = table8[["ID", filter + "_KRON", filter + "_KRON_e"]]
+        flux = table8[["ID", filter + "_CIRC0", filter + "_CIRC0_e"]]
         # nJy to mJy
-        flux[filter + "_KRON"] = 1e-6 * flux[filter + "_KRON"]
-        flux[filter + "_KRON_e"] = 1e-6 * flux[filter + "_KRON_e"]
+        flux[filter + "_CIRC0"] = 1e-6 * flux[filter + "_CIRC0"]
+        flux[filter + "_CIRC0_e"] = 1e-6 * flux[filter + "_CIRC0_e"]
 
-        flux.rename_column(filter + "_KRON", filter_prefixes[i] + filter)
-        flux.rename_column(filter + "_KRON_e", filter_prefixes[i] + filter + "_err")
+        flux.rename_column(filter + "_CIRC0", filter_prefixes[i] + filter)
+        flux.rename_column(filter + "_CIRC0_e", filter_prefixes[i] + filter + "_err")
 
         fluxes = join(fluxes, flux, keys="ID")
 
@@ -65,6 +65,7 @@ def mJy_tomagAB(x):
     y = np.full(len(x), np.nan, dtype=object)
     y[mask] = 23.9 - 2.5 * unp.log10(x[mask] * 1e3)
     return y
+table8 = Table(hdul[4].data)
 
 values = table["hst.acs.wfc.F435W"]
 errors = table["hst.acs.wfc.F435W_err"]
@@ -86,6 +87,6 @@ table["miu_x_corr_err"] = unp.std_devs(miu_corr)
 
 table.rename_column("ID", "id")
 
-table.write("before_crossmatch.fits", format="fits", overwrite=True)
+table.write("before_crossmatch80.fits", format="fits", overwrite=True)
 
 print(table)

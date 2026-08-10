@@ -172,4 +172,20 @@ Left todo:
 * comparing fluxes in LSST and JWST when photometry is performed on an image and not taken from the catalog
 * test with a constant aperture - to check where the inconsistencies come from 
 
+10.08
+
+Done:
+
+* making sure the unit in LSST is actually nJy - it is
+* adding interpolation - kinda
+* test with a constant aperture - 0.5 arcsec = 2.5 pixels in lsst - in const_aperture_test folder
+const_aperture_test - results.fits, HST catalog, galaxies_images245.fits the same, the rest is modified
+
+sed_example.py, CIGALE25_filters_parsed.json - Krzysiek's code for SED analysis without a whole cigale run
+
+Left todo:
+* taking care of the repository
+* checking in catalog documentation (JWST, Hubble) how 80% flux is defined
+* interpolation - checking if it is done correctly
+* comparing fluxes in LSST and JWST when photometry is performed on an image and not taken from the catalog
 

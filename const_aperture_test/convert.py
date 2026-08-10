@@ -9,7 +9,7 @@ from uncertainties import unumpy as unp
 hdul = fits.open('hlsp_jades_jwst_nircam_goods-s-deep_photometry_v2.0_catalog.fits')
 
 table3 = Table(hdul[3].data)
-table6 = Table(hdul[4].data)
+table6 = Table(hdul[6].data)
 table9 = Table(hdul[9].data)
 
 # I intialize the data structure with following data
@@ -65,7 +65,6 @@ def mJy_tomagAB(x):
     y = np.full(len(x), np.nan, dtype=object)
     y[mask] = 23.9 - 2.5 * unp.log10(x[mask] * 1e3)
     return y
-table6 = Table(hdul[4].data)
 
 values = table["hst.acs.wfc.F435W"]
 errors = table["hst.acs.wfc.F435W_err"]

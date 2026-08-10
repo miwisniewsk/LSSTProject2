@@ -181,7 +181,7 @@ Done:
 * test with a constant aperture - 0.5 arcsec = 2.5 pixels in lsst - in const_aperture_test folder
 const_aperture_test - results.fits, HST catalog, galaxies_images245.fits the same, the rest is modified
 
-sed_example.py, CIGALE25_filters_parsed.json - Krzysiek's code for SED analysis without a whole cigale run
+sed_example.psy, CIGALE25_filters_parsed.json - Krzysiek's code for SED analysis without a whole cigale run
 
 Left todo:
 * taking care of the repository

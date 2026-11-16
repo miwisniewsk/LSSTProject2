@@ -223,5 +223,6 @@ Adding fake LSST bands to cigale
 
 fake_lsst_std_dev.ipynb - file that adds noise and error to fake lsst filters and saves a result into fits file
 
-fake_lsst.fits - resulting fits file - this is a combination of input to cigale file, output of cigale file and fake lsst bands with errors, (lsst bands are named accoring to how they would be named as an input to cigale)
+fake_lsst.fits - resulting fits file - this is a combination of input to cigale file, output of cigale file and fake lsst bands with errors, 
+(lsst bands are named accoring to how they would be named as an input to cigale)
 

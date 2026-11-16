@@ -17,6 +17,9 @@ Zrobienie wykresów itd:
 pcigale-plots sed --format png
 pcigale-plots mock --format png
 
+Filtry:
+pcigale-filters list
+
 Przydatne, wyłaczenie samego ekranu:
 loginctl lock-session
 

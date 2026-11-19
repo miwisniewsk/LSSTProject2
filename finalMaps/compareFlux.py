@@ -255,7 +255,7 @@ for gal in range(30):
     #if top[gal]['id'] != 244396: continue
     try:
         lsst = np.loadtxt('lsst_cutouts/%i.txt'%top[gal]['id'])
-        jwst = fits.open('hst_cutouts/%i_F606W.fits'%top[gal]['id'])[0].data
+        jwst = fits.open('hst_cutouts/%i_hst.fits'%top[gal]['id'])[0].data
     except Exception as err:
         print(err)
         continue

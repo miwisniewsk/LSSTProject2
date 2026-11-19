@@ -226,3 +226,17 @@ fake_lsst_std_dev.ipynb - file that adds noise and error to fake lsst filters an
 fake_lsst.fits - resulting fits file - this is a combination of input to cigale file, output of cigale file and fake lsst bands with errors, 
 (lsst bands are named accoring to how they would be named as an input to cigale)
 
+19.11
+
+Adding Krzysiek code for comparing images (compareFlux)
+
+hst_cutouts - hst fits images, already masked
+lsst_fits - lsst fits images, already masked
+lsst_cutouts - lsst images txt, no masking
+
+display.ipynb - file for displaying fits images
+
+Ideas:
+* get unmasked hst images
+* write my own version of the program
+

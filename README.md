@@ -240,3 +240,13 @@ Ideas:
 * get unmasked hst images
 * write my own version of the program
 
+23.11
+
+Managing to store large files and pushing (finally!) the repository to github
+
+In order to correctly save commit and leave large files locally do:
+
+git lfs migrate import --no-rewrite --yes --everything --above=50MB
+
+Just in case, this is an instruction: github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc?utm_source=gitlfs_site&utm_medium=doc_man_migrate_link&utm_campaign=gitlfs
+

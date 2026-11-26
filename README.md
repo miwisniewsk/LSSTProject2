@@ -250,3 +250,9 @@ git lfs migrate import --no-rewrite --yes --everything --above=50MB
 
 Just in case, this is an instruction: github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc?utm_source=gitlfs_site&utm_medium=doc_man_migrate_link&utm_campaign=gitlfs
 
+
+26.11
+
+cigale_fake_lsst - folder with a run composed of fake lsst data only
+
+comparison.ipynb - comparing mass, SFR and Attenuation from this run and previous run with wide range of spectrum
